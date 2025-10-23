@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 0.875rem;
+}
+
+.extension-container {
+    background: rgb(43 91 226 / 8%);
+    text-align: center;
+}
+
+.extension-container h1 {
+    font-size: 1rem;
+    padding: 8px 0;
+    background: rgb(13 17 23 / 05%);
+    color: lightslategray;
+    margin-bottom: 10px;
+}
+
+.extension-container img {
+    max-width: 100%;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.extension-container h2 {
+    font-size: 1.5em;
+    margin: 5px 0;
+}
+
+.extension-container ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-block: 8px;
+}
+
+.extension-container ul li {
+    list-style: none;
+}
+
+.extension-container > a,
+.extension-container ul li a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+.extension-container > a:hover,
+.extension-container ul li a:hover {
+    text-decoration: underline;
+}
