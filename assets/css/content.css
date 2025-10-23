@@ -1,0 +1,216 @@
+/* ------------------------------------------------------ */
+/*  Default                                               */
+/* ------------------------------------------------------ */
+:root {
+    --text-color: #adb5bd;
+    --bg-color: #212529;
+    --primary: #00b377;
+    --secondary: #ECEFF1;
+    --black: #000;
+    --primary-rgb: 0, 198, 132;
+    --color-beige: rgb(228, 228, 190);
+    --border-color: #343a40;
+    --table-borderless-bg: var(--border-color);
+    /* reset wp style */
+    --wp--preset--color--white: var(--bg-color) !important;
+    --wp--preset--color--light-grey-1: var(--border-color) !important;
+    --wp--preset--color--light-grey-2: #1c262a !important;
+    --wp--preset--color--blueberry-1: var(--primary) !important;
+    --wp--preset--color--charcoal-1: var(--text-color) !important;
+    --wp--custom--button--outline--hover--color--background: var(--primary) !important;
+    --wp--custom--button--hover--color--background: var(--primary) !important;
+}
+
+* {
+    scroll-behavior: smooth !important;
+    scrollbar-width: thin !important;
+}
+
+p.has-white-color, body, p {
+    color: var(--text-color) !important;
+}
+
+a:where(:not(.wp-element-button, .wp-block-heading a)) {
+    color: var(--primary) !important;
+}
+
+:where(.entry-content a:not(.wp-element-button)):visited {
+    color: #0d6efd !important;
+}
+
+h1.wp-block-heading {
+    color: var(--text-color);
+}
+
+input:not([type=submit]),
+textarea {
+    border-width: 1px !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+.entry-content pre:not(.wp-block-code) {
+    background-color: var(--color-beige) !important;
+}
+
+[class*=callout-],
+.wp-block-wporg-notice,
+[style*=background],
+[style*=background-color] {
+    background: transparent !important;
+    border: 1px dashed var(--border-color) !important;
+    padding: 8px;
+}
+/* ------------------------------------------------------ */
+/*  Header Style                                          */
+/* ------------------------------------------------------ */
+.wp-block-wporg-global-header a,
+.wp-block-wporg-local-navigation-bar a {
+    color: var(--text-color) !important;
+}
+
+.wp-block-search__inside-wrapper ul,
+.wp-block-navigation-submenu ul {
+    outline-color: #121212 !important;
+    border-color: #121212 !important;
+}
+
+.wp-block-search__inside-wrapper ul li,
+.wp-block-navigation-submenu ul {
+    color: var(--text-color) !important;
+    background: #1c2024 !important;
+}
+
+.wp-block-search__inside-wrapper ul li:hover {
+    text-decoration: underline !important;
+}
+/* ------------------------------------------------------ */
+/*  Search Style                                          */
+/* ------------------------------------------------------ */
+form[role*=search] button,
+form[role*=search] input {
+    color: var(--bg-color) !important;
+    background: var(--secondary) !important;
+}
+
+.wp-block-wporg-code-type-usage-info a {
+    color: var(--text-color) !important;
+}
+
+.wp-block-wporg-search-filters input[type=checkbox] + label {
+    border-style: dashed !important;
+    border-color: var(--border-color) !important;
+}
+
+.wp-block-wporg-search-filters input[type=checkbox]:hover + label {
+    background: transparent !important;
+    color: var(--primary) !important;
+}
+
+.wp-block-wporg-search-filters input[type=checkbox]:checked + label {
+    border-style: solid !important;
+    border-color: var(--primary) !important;
+    background: var(--secondary) !important;
+    color: var(--bg-color) !important;
+}
+
+.wp-block-search__button,
+.wp-block-search__input {
+    height: 40px;
+}
+
+.wp-block-wporg-resource-select select {
+    background-color: var(--border-color) !important;
+}
+/* ------------------------------------------------------ */
+/*  Body Style                                            */
+/* ------------------------------------------------------ */
+h1.wp-block-wporg-code-reference-title {
+    background: var(--secondary);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.is-toc-heading:target {
+    --wp--preset--color--blueberry-1: #0d6efd;
+}
+
+.wp-block-syntaxhighlighter-code,
+.entry-content code:not(
+    [class*=language-],
+    .wp-block-post-content code,
+    .wporg-developer-code-block code,
+    .wp-block-wporg-code-table .wp-block-table code
+){
+    color: var(--primary);
+    background: rgba(var(--primary-rgb), .1) !important;
+}
+
+pre[class*=language-] code,
+.wp-block-post-content pre code,
+.wp-code-block-button-container code,
+.wp-code-block-button-container {
+    background: transparent !important;
+}
+
+.entry-content.wp-block-post-content pre code:not([class]), pre {
+    color: var(--black);
+    background: transparent !important;
+}
+
+/* border */
+.comment,
+.comment-meta,
+.wp-editor-container,
+.wporg-developer-code-block .wp-code-block-button-container,
+.wporg-developer-code-block .wp-block-code {
+    border-color: var(--border-color) !important;
+}
+
+.wp-code-block-button-container {
+    border-bottom-width: 1px !important;
+}
+
+/* background beige */
+pre[class*=language-]:not(
+    .single-post .entry-content pre[class*=language-]
+),
+.dashicons-page pre,
+.wporg-developer-code-block .wp-block-code {
+    background: var(--color-beige) !important;
+}
+
+table th,
+table td {
+    border-color: var(--border-color) !important;
+}
+
+.wp-block-table.is-style-borderless thead tr,
+.wp-block-table.is-style-borderless tbody tr:nth-child(2n) {
+    background-color: var(--table-borderless-bg) !important;
+}
+
+.entry-content code:not([class]),
+.wporg-has-embedded-code :not(.wp-block-code):not(.wp-code-block-button-container)>code {
+    background-color: var(--border-color) !important;
+}
+/* ------------------------------------------------------ */
+/*  Sidebar Style                                         */
+/* ------------------------------------------------------ */
+.wp-block-wporg-sidebar-container li a {
+    color: var(--text-color)!important;
+}
+
+.wp-block-wporg-sidebar-container li a[aria-current="page"] {
+    color: var(--secondary) !important;
+}
+
+.wp-block-wporg-sidebar-container .is-link-to-top {
+    border-top-color: var(--border-color) !important;
+}
+/* ------------------------------------------------------ */
+/*  Footer                                                */
+/* ------------------------------------------------------ */
+.global-footer a {
+    color: var(--text-color) !important;
+}
