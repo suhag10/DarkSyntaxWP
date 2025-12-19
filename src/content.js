@@ -1,4 +1,11 @@
-// content.js
+/**
+ * Extension Name: DarkSyntaxWP
+ * Author: Suhag Ahmed
+ * Author URI: https://github.com/suhag10/
+ * Description: DarkSyntaxWP - A dark theme extension for WordPress developers.
+ * Version: 0.2.1
+ * License: 2025 DarkSyntaxWP. Licensed under the MIT License
+ */
 (() => {
     "use strict";
 
@@ -84,10 +91,10 @@
         <div id="themeGroup" class="btn-group">
             <div class="color-palette">
                 <h3>Default</h3>
-                <button type="button" data-id="11" value="#00c684"></button>
-                <button type="button" data-id="11" value="#008080"></button>
-                <button type="button" data-id="11" value="#AB6C56"></button>
-                <button type="button" data-id="11" value="#B5835A"></button>
+                <button type="button" data-id="default-1" value="#00c684"></button>
+                <button type="button" data-id="default-2" value="#008080"></button>
+                <button type="button" data-id="default-3" value="#AB6C56"></button>
+                <button type="button" data-id="default-4" value="#B5835A"></button>
             </div>
             <div class="color-palette">
                 <h3>Slate</h3>
@@ -306,6 +313,6 @@
             target?.parentNode?.classList.add("ds-header-banner");
         }
     } catch (error) {
-        console.error("Banner update error:", error);
+        console.error("Banner error:", error);
     }
 })();

@@ -1,3 +1,12 @@
+/* -----------------------------------------------------------------------------
+  Extension Name: DarkSyntaxWP
+  Author: Suhag Ahmed
+  Author URI: https://github.com/suhag10/
+  Description: DarkSyntaxWP - A dark theme extension for WordPress developers.
+  Version: 0.2.1
+  License: 2025 DarkSyntaxWP. Licensed under the MIT License
+------------------------------------------------------------------------------ */
+
 /* ------------------------------------------------------ */
 /*  Default                                               */
 /* ------------------------------------------------------ */
@@ -239,7 +248,7 @@ table td {
 	-webkit-transition: all 0.3s ease-out 0s;
 	-moz-transition: all 0.3s ease-out 0s;
 	transition: all 0.3s ease-out 0s;
-    z-index: 999;
+    z-index: 999999;
 }
 
 .darksyntax.opened {left: 0}

@@ -1,9 +1,10 @@
 {
   "manifest_version": 3,
   "name": "DarkSyntaxWP",
-  "version": "0.2",
+  "version": "0.2.1",
   "author": "Suhag Ahmed",
   "description": "A dark theme extension for WordPress developers.",
+  "homepage_url": "https://github.com/suhag10/DarkSyntaxWP/",
   "permissions": ["activeTab", "storage"],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
@@ -11,8 +12,8 @@
   "action": {
     "default_popup": "src/popup/popup.html",
     "default_icon": {
-      "16": "assets/icons/chrome-48.png",
-      "48": "assets/icons/chrome-48.png"
+      "64": "assets/icons/icon-180x180.png",
+      "128": "assets/icons/icon-192x192.png"
     }
   },
   "content_scripts": [
@@ -23,7 +24,18 @@
     }
   ],
   "icons": {
-    "48": "assets/icons/chrome-48.png",
-    "128": "assets/icons/chrome-128.png"
+    "64": "assets/icons/icon-180x180.png",
+    "128": "assets/icons/icon-192x192.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      },
+      "id": "DarkSyntaxWP@suhag",
+      "strict_min_version": "142.0"
+    }
   }
 }

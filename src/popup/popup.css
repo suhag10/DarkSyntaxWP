@@ -13,27 +13,29 @@
 }
 
 .extension-container {
-    background: rgb(43 91 226 / 8%);
+    background: #000107;
     text-align: center;
+}
+
+.extension-container p {
+    color: #f1f1f1;
 }
 
 .extension-container h1 {
     font-size: 1rem;
     padding: 8px 0;
-    background: rgb(13 17 23 / 05%);
+    background: rgb(0 15 15);
     color: lightslategray;
     margin-bottom: 10px;
 }
 
 .extension-container img {
     max-width: 100%;
-    width: 100px;
-    border-radius: 100%;
+    vertical-align: middle;
 }
 
-.extension-container h2 {
-    font-size: 1.5em;
-    margin: 5px 0;
+.extension-container .description {
+    line-height: 16px;
 }
 
 .extension-container ul {
